@@ -1,0 +1,12 @@
+#N canvas -8 -8 1920 1037 10;
+#X obj 228 27 r constant_log_level;
+#X obj 50 25 inlet;
+#X text 90 24 message to print;
+#X obj 50 113 print;
+#X obj 50 85 spigot;
+#X text 383 53 print if 2 or higher;
+#X obj 228 53 expr if ($f1 >= 2 \, 1 \, 0);
+#X connect 0 0 6 0;
+#X connect 1 0 4 0;
+#X connect 4 0 3 0;
+#X connect 6 0 4 1;
