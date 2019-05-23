@@ -1,0 +1,9 @@
+#N canvas 0 50 450 300 10;
+#X obj 52 132 outlet;
+#X obj 51 6 inlet;
+#X obj 52 107 + 1;
+#X obj 52 84 * 8;
+#X text 87 96 overdrive goes from 1 to 10 so we go to 9;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
