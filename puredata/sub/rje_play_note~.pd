@@ -50,7 +50,6 @@
 #X obj 374 758 rje_pan_according_to_pitch~;
 #X obj 533 736 r \$0-key_velocity;
 #X connect 0 0 4 0;
-#X connect 1 0 7 0;
 #X connect 1 0 19 0;
 #X connect 5 0 1 0;
 #X connect 6 0 8 0;
