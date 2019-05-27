@@ -1,4 +1,4 @@
-#N canvas -8 -8 1920 1037 10;
+#N canvas 953 0 958 1028 10;
 #X declare -lib ceammc;
 #X declare -lib zexy;
 #X declare -lib cyclone;
@@ -113,6 +113,7 @@ patch.;
 #X msg 495 274 \$2 \$3;
 #X obj 495 307 sub/rje_handle_pedal;
 #X obj 211 194 sub/rje_loop;
+#X text 16 53 Top C is play/stop loop B is record/finish loop;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 0 1 10 0;

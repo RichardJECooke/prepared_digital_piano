@@ -92,8 +92,8 @@
 #X obj 996 167 rje_play_note~;
 #X obj 1003 190 rje_play_note~;
 #X obj 1012 209 rje_play_note~;
-#X obj 1022 230 rje_play_note~;
-#X obj 1033 252 rje_play_note~;
+#X obj 1027 231 s record_key_pressed;
+#X obj 1038 252 s play_key_pressed;
 #X connect 0 0 2 0;
 #X connect 2 0 27 0;
 #X connect 2 1 28 0;
