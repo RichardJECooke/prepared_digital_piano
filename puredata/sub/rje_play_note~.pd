@@ -32,10 +32,10 @@
 #X obj 1031 210 rje_play_string~;
 #X obj 263 798 throw~ individual_notes_left;
 #X obj 468 798 throw~ individual_notes_right;
-#X obj 23 465 throw~ \$0-signal_1_left;
+#X obj 23 501 throw~ \$0-signal_1_left;
 #X obj 513 476 throw~ \$0-signal_1_left;
 #X obj 1032 262 throw~ \$0-signal_1_left;
-#X obj 210 465 throw~ \$0-signal_1_right;
+#X obj 210 503 throw~ \$0-signal_1_right;
 #X obj 595 453 throw~ \$0-signal_1_right;
 #X obj 1125 239 throw~ \$0-signal_1_right;
 #X obj 272 639 catch~ \$0-signal_1_left;
@@ -51,6 +51,8 @@
 #X obj 23 439 *~;
 #X obj 609 343 expr 0.8*(max($f1 - 0.5 \, 0) / 0.5);
 #X obj 250 393 expr 1 - \$1;
+#X obj 23 470 *~ 1.5;
+#X obj 210 471 *~ 1.5;
 #X connect 0 0 4 0;
 #X connect 1 0 15 0;
 #X connect 5 0 1 0;
@@ -75,10 +77,12 @@
 #X connect 35 0 34 2;
 #X connect 36 0 24 0;
 #X connect 37 0 27 0;
-#X connect 38 0 26 0;
-#X connect 39 0 23 0;
+#X connect 38 0 43 0;
+#X connect 39 0 42 0;
 #X connect 40 0 36 1;
 #X connect 40 0 37 1;
 #X connect 40 0 41 0;
 #X connect 41 0 38 1;
 #X connect 41 0 39 1;
+#X connect 42 0 23 0;
+#X connect 43 0 26 0;
