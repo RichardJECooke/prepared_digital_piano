@@ -4,8 +4,8 @@
 #X msg 32 86 @sf ../soundfonts/westCoastPiano.sf2;
 #X obj 65 113 inlet;
 #X text 109 113 pitch velocity;
-#X obj 35 200 outlet~;
-#X obj 105 200 outlet~;
+#X obj 33 200 outlet~;
+#X obj 103 200 outlet~;
 #X obj 279 167 rje_is_note_on;
 #X obj 279 198 switch~;
 #X connect 0 0 5 0;
