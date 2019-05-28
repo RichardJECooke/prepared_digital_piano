@@ -59,11 +59,11 @@
 #X obj 379 789 *~;
 #X text 394 310 scale velocity to keypress;
 #X text 392 746 reduce string velocity so not to overpower piano;
-#X obj 471 803 r \$0-key_velo;
-#X obj 471 825 expr $f1 - 60;
+#X obj 459 803 r \$0-key_velo;
+#X obj 459 825 expr $f1 - 60;
 #X obj 1219 54 loadbang;
 #X msg 687 568 0 5;
-#X text 562 826 pitch shift by semitones minus middle c;
+#X text 550 826 pitch shift by semitones minus middle c;
 #X obj 1219 80 delay 1000;
 #X msg 1219 108 60 1;
 #X obj 1219 132 s \$0-key_velo;
@@ -72,12 +72,12 @@
 #X msg 1336 133 60 0;
 #X text 1215 17 play string briefly at start to initialise the delay
 (dunno why this is needed);
-#X obj 471 851 change;
-#X obj 378 886 rje_pitch_shift~;
+#X obj 459 851 change;
 #X obj 23 465 rje_is_note_on;
 #X obj 23 488 switch~;
 #X obj 23 443 r \$0-key_velo;
 #X text 19 423 switch off this patch to save cpu;
+#X obj 378 886 fx.pitchshift~;
 #X connect 0 0 22 0;
 #X connect 3 0 47 0;
 #X connect 4 0 46 0;
@@ -119,7 +119,7 @@
 #X connect 47 0 45 1;
 #X connect 48 0 34 0;
 #X connect 49 0 50 1;
-#X connect 50 0 66 0;
+#X connect 50 0 70 0;
 #X connect 53 0 54 0;
 #X connect 54 0 65 0;
 #X connect 55 0 58 0;
@@ -129,8 +129,8 @@
 #X connect 59 0 60 0;
 #X connect 61 0 63 0;
 #X connect 63 0 62 0;
-#X connect 65 0 66 1;
-#X connect 66 0 1 0;
-#X connect 66 0 2 0;
-#X connect 67 0 68 0;
-#X connect 69 0 67 0;
+#X connect 65 0 70 1;
+#X connect 66 0 67 0;
+#X connect 68 0 66 0;
+#X connect 70 0 1 0;
+#X connect 70 0 2 0;
