@@ -12,7 +12,7 @@
 #X obj 227 90 max 12;
 #X obj 227 113 min 75;
 #X text 280 96 compress the range to remove the extreme 8ves;
-#X text 588 175 range it from 0 to 63;
+#X text 578 155 range it from 0 to 63;
 #X obj 227 158 expr (63 - ($f1 - 12)) / 63;
 #X obj 440 157 expr ($f1 - 12) / 63;
 #X connect 0 0 5 0;
