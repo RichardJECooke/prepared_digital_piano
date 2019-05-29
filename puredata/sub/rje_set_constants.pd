@@ -26,6 +26,9 @@
 #X obj 1025 203 s constant_delay_bpm;
 #X msg 1025 179 140;
 #X msg 835 179 0.2;
+#X obj 1174 153 r \$0_banger;
+#X obj 1174 203 s effect_chance;
+#X msg 1174 179 50;
 #X connect 0 0 20 0;
 #X connect 1 0 3 0;
 #X connect 6 0 4 0;
@@ -43,3 +46,5 @@
 #X connect 22 0 24 0;
 #X connect 24 0 23 0;
 #X connect 25 0 19 0;
+#X connect 26 0 28 0;
+#X connect 28 0 27 0;
