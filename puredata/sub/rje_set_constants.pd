@@ -1,4 +1,4 @@
-#N canvas -8 -8 1920 1037 10;
+#N canvas -2002 11 1920 1037 10;
 #X obj 22 13 loadbang;
 #X msg 147 180 0.5;
 #X obj 22 205 s constant_amplify;
@@ -24,17 +24,17 @@
 #X obj 1025 203 s constant_delay_bpm;
 #X msg 1025 179 140;
 #X obj 1396 201 r \$0_banger;
-#X obj 1369 376 s effect_chance;
+#X obj 1369 396 s effect_chance;
 #X msg 22 180 3;
 #X msg 665 180 4000;
 #X msg 835 178 0.3;
 #X obj 1369 233 timer;
 #X obj 1206 152 r \$0_banger;
-#X text 1237 178;
+#X text 1237 178 comment;
 #X obj 1206 202 s reset_effect_ms;
 #X obj 1380 177 loadbang;
 #X obj 1369 152 rje_bang_if_long_silence;
-#X msg 1369 352 \$1;
+#X msg 1369 346 \$1;
 #X text 1425 259 3m * 60s * 1000ms;
 #X obj 1369 259 / 180000;
 #X obj 1369 321 * 50;
@@ -43,6 +43,8 @@
 #X obj 1369 288 min 1;
 #X msg 1206 178 20000;
 #X text 1403 321 <------------- ALTER THIS (chance out of 1000);
+#X msg 1268 346 100;
+#X obj 1268 320 r \$0_banger;
 #X connect 0 0 19 0;
 #X connect 1 0 3 0;
 #X connect 6 0 4 0;
@@ -70,3 +72,4 @@
 #X connect 37 0 34 0;
 #X connect 40 0 37 0;
 #X connect 41 0 31 0;
+#X connect 44 0 43 0;
