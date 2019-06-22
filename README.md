@@ -12,6 +12,11 @@ If you have questions about anything, mail me.
 - File - Prefences - setup up your audio and midi settings (you might have to setup up your keyboard a few times)
 - File - Preferences - Paths - Add externals/ceammc folder to the path
 
+## Editing
+
+- Note the effects build up from 0% to 10% over 4.5 minutes. To change this open the `set_constants` patch and change the value.
+- To record a loop push high B. To play it push high C.
+
 ## Forum posts
 
 - Purr Data fluid~ library not working: https://git.purrdata.net/jwilkes/purr-data/issues/540
