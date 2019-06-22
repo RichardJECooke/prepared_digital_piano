@@ -5,7 +5,7 @@ A digital piano. First I tried csound, but it was too hard so I switched to Pure
 If you have questions about anything, mail me.
 
 ## How to run the Pure data piano
-- Install  Puredata vanilla, at lowest version 0.49.1 - https://puredata.info/downloads/pure-data.
+- Install  Puredata vanilla, at minimum version 0.49.1, - https://puredata.info/downloads/pure-data.
 - Open `pure_data/prepared_digital_piano.pd` in Pure Data.
 - Help - Find external - cyclone - Add - wait for installation
 - Help - Find external - ceammc - Add - wait for installation
